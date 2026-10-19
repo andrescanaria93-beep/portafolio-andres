@@ -1,444 +1,381 @@
 <!DOCTYPE html>
 <html lang="es" class="scroll-smooth">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Andrés Canaria | Trafficker Digital & Estratega</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Andrés Canaria | Trafficker Digital</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&family=Space+Grotesk:wght@700&display=swap');
+    body { font-family: 'Inter', sans-serif; }
+    .font-mono { font-family: 'Space Grotesk', monospace; }
     
-    <!-- Tailwind CSS -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@700;800;900&display=swap" rel="stylesheet">
-    
-    <!-- FontAwesome for Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
-    <style>
-        body {
-            font-family: 'Inter', sans-serif;
-            overflow-x: hidden;
-            background-color: #f8fafc; /* slate-50 */
-        }
-        .font-display {
-            font-family: 'Montserrat', sans-serif;
-        }
-        
-        /* Hero Cards */
-        .glass-card-light {
-            background: rgba(255, 255, 255, 0.7);
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(255, 255, 255, 0.9);
-            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
-            transition: all 0.3s ease;
-        }
-        .glass-card-light:hover {
-            background: rgba(255, 255, 255, 1);
-            transform: translateY(-3px);
-            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
-        }
-
-        .glass-card-primary {
-            background: #ffffff;
-            border: 2px solid #3b82f6; 
-            box-shadow: 0 10px 25px -5px rgba(59, 130, 246, 0.2);
-            transition: all 0.3s ease;
-        }
-        .glass-card-primary:hover {
-            transform: translateY(-4px);
-            box-shadow: 0 15px 35px -5px rgba(59, 130, 246, 0.3);
-        }
-
-        /* Texto gigante adaptable al fondo partido */
-        .split-text {
-            color: white;
-            mix-blend-mode: difference;
-            opacity: 0.15;
-        }
-
-        /* Animación para los tooltips CSS de las capturas */
-        @keyframes pulse-soft {
-            0%, 100% { transform: scale(1); }
-            50% { transform: scale(1.05); }
-        }
-        .animate-pulse-soft {
-            animation: pulse-soft 3s infinite ease-in-out;
-        }
-    </style>
+    /* Efecto Glassmorphism sutil para las tarjetas en fondo claro */
+    .glass-card {
+      background: rgba(255, 255, 255, 0.9);
+      backdrop-filter: blur(10px);
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+    }
+  </style>
 </head>
-<body class="text-slate-900">
+<body class="bg-gray-900 text-white antialiased">
 
-    <!-- ==========================================
-         SECCIÓN 1: HERO (PANTALLA DIVIDIDA)
-         ========================================== -->
-    <header class="relative min-h-screen flex flex-col md:flex-row w-full overflow-hidden">
+  <!-- ==========================================
+       HERO SECTION (DISEÑO OSCURO ORIGINAL)
+  =========================================== -->
+  <main class="relative min-h-screen flex flex-col md:flex-row w-full overflow-hidden">
+    
+    <!-- Texto Gigante de Fondo (Marca de agua) -->
+    <div class="absolute bottom-[-2vw] left-0 w-full text-center z-0 pointer-events-none opacity-40 select-none overflow-hidden">
+      <h1 class="text-[18vw] font-black tracking-tighter text-gray-800 leading-none" style="mix-blend-mode: color-dodge;">
+        TRAFFICKER
+      </h1>
+    </div>
+
+    <!-- Mitad Izquierda (Oscura) -->
+    <div class="w-full md:w-1/2 p-8 md:p-16 lg:p-24 flex flex-col justify-center relative z-40 bg-gray-900 border-r border-gray-800">
+      
+      <div class="mb-4 inline-block">
+        <span class="text-blue-500 font-bold tracking-widest text-xs uppercase bg-blue-500/10 px-3 py-1 rounded-full">
+          Hola, soy Andrés Canaria
+        </span>
+      </div>
+
+      <h2 class="text-5xl md:text-7xl font-black uppercase tracking-tighter leading-[0.9] mb-8">
+        Trafficker<br/>
+        <span class="text-gray-500">Digital</span>
+      </h2>
+      
+      <div class="w-16 h-1 bg-blue-500 mb-8"></div>
+
+      <p class="text-gray-400 text-lg md:text-xl leading-relaxed mb-12 max-w-md">
+        Transformo tu inversión publicitaria en retornos escalables. Estrategia enfocada en ROAS, apoyada por un sólido diseño de piezas y desarrollo web de alta conversión.
+      </p>
+
+      <div class="flex gap-12">
+        <div>
+          <p class="text-5xl md:text-6xl font-black text-white flex items-center">
+            6<span class="text-blue-500 text-3xl ml-1">+</span>
+          </p>
+          <p class="text-gray-500 text-xs font-bold tracking-widest uppercase mt-2">Años de<br>Experiencia</p>
+        </div>
+        <div>
+          <p class="text-5xl md:text-6xl font-black text-white flex items-center">
+            30<span class="text-blue-500 text-3xl ml-1">+</span>
+          </p>
+          <p class="text-gray-500 text-xs font-bold tracking-widest uppercase mt-2">Proyectos<br>Completados</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mitad Derecha (Clara) -->
+    <div class="w-full md:w-1/2 p-8 md:p-16 lg:p-24 flex flex-col justify-center bg-slate-50 text-slate-900 relative z-40">
+      
+      <h3 class="text-xs font-bold tracking-widest uppercase text-slate-400 mb-6">Mi Ecosistema</h3>
+
+      <!-- Servicio Principal (Trafficker) - AHORA ES UN BOTÓN INTERACTIVO -->
+      <a href="#metodologia" class="block w-full bg-white rounded-2xl p-8 mb-4 border-2 border-blue-500 shadow-xl shadow-blue-500/10 hover:shadow-2xl hover:shadow-blue-500/20 transform hover:-translate-y-1 transition-all duration-300 cursor-pointer group">
+        <div class="flex items-start gap-6">
+          <div class="bg-blue-50 w-16 h-16 rounded-xl flex items-center justify-center text-blue-600 shrink-0">
+            <i class="fa-solid fa-chart-line text-3xl group-hover:scale-110 transition-transform"></i>
+          </div>
+          <div>
+            <h4 class="text-2xl font-black uppercase tracking-tight text-slate-900 mb-2">Tráfico en Meta Ads</h4>
+            <p class="text-slate-600 text-sm leading-relaxed mb-4">
+              Estrategia de pauta enfocada en ROAS y escalabilidad pura. No compro clics, compro clientes.
+            </p>
+            <span class="inline-flex items-center text-blue-600 text-xs font-bold uppercase tracking-wider animate-pulse">
+              Ver Metodología y Resultados <i class="fa-solid fa-arrow-down ml-2"></i>
+            </span>
+          </div>
+        </div>
+      </a>
+
+      <!-- Servicios Secundarios en Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <!-- Web Dev -->
+        <div class="bg-white rounded-2xl p-6 border border-slate-200 flex flex-col items-center text-center">
+          <i class="fa-solid fa-laptop-code text-2xl mb-3 text-slate-700"></i>
+          <h4 class="text-xs font-bold uppercase tracking-wider text-slate-900">Desarrollo Web</h4>
+        </div>
         
-        <!-- Fondos Absolutos para la división -->
-        <div class="absolute inset-0 flex flex-col md:flex-row z-0">
-            <div class="w-full md:w-1/2 bg-[#0f172a]"></div> <!-- bg-slate-900 oscuro -->
-            <div class="w-full md:w-1/2 bg-[#f3f4f6]"></div> <!-- bg-gray-100 claro -->
+        <!-- Ad Design -->
+        <div class="bg-white rounded-2xl p-6 border border-slate-200 flex flex-col items-center text-center">
+          <i class="fa-solid fa-photo-film text-2xl mb-3 text-slate-700"></i>
+          <h4 class="text-xs font-bold uppercase tracking-wider text-slate-900">Diseño de Ads</h4>
+        </div>
+        
+        <!-- Ciclo de Ventas -->
+        <div class="bg-white rounded-2xl p-6 border border-slate-200 flex items-center justify-center gap-3 col-span-1 md:col-span-2">
+          <i class="fa-solid fa-arrows-spin text-xl text-slate-700"></i>
+          <h4 class="text-xs font-bold uppercase tracking-wider text-slate-900">Gestión de Ciclo de Ventas</h4>
+        </div>
+      </div>
+
+      <!-- Barra inferior (Insignia) -->
+      <div class="mt-12 inline-flex items-center gap-4 bg-white px-6 py-3 border border-slate-200 rounded-full shadow-sm w-max">
+        <div class="bg-slate-900 text-white w-6 h-6 rounded-full flex items-center justify-center">
+          <i class="fa-solid fa-check text-[10px]"></i>
+        </div>
+        <div>
+          <p class="text-[11px] font-bold text-slate-900 uppercase tracking-widest">Andrés Canaria</p>
+          <p class="text-[10px] text-slate-500 uppercase tracking-wider">Workana Freelancer</p>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- ==========================================
+       SECCIÓN: METODOLOGÍA (FONDO CLARO)
+  =========================================== -->
+  <section id="metodologia" class="w-full bg-white py-24 px-8 md:px-24 relative z-50 border-t border-slate-200">
+    <div class="max-w-7xl mx-auto">
+      
+      <div class="mb-16 md:text-center">
+        <h2 class="text-4xl md:text-5xl font-black text-slate-900 uppercase tracking-tighter mb-4">
+          Mi <span class="text-blue-600">Metodología</span>
+        </h2>
+        <p class="text-slate-600 text-lg max-w-2xl md:mx-auto">
+          Cualquiera puede apretar botones en el administrador de anuncios. Los resultados excepcionales nacen de entender la psicología humana antes de lanzar la primera campaña.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <!-- Pilar 1 -->
+        <div class="bg-slate-50 rounded-2xl p-8 border border-slate-200 hover:border-blue-400 transition-colors">
+          <i class="fa-solid fa-magnifying-glass-chart text-3xl text-blue-600 mb-6"></i>
+          <h3 class="text-lg font-bold text-slate-900 mb-3">Investigación Exhaustiva</h3>
+          <p class="text-slate-600 text-sm">Análisis profundo del mercado, competencia y ángulos de venta antes de invertir un solo dólar en pauta.</p>
+        </div>
+        <!-- Pilar 2 -->
+        <div class="bg-slate-50 rounded-2xl p-8 border border-slate-200 hover:border-blue-400 transition-colors">
+          <i class="fa-solid fa-brain text-3xl text-blue-600 mb-6"></i>
+          <h3 class="text-lg font-bold text-slate-900 mb-3">Niveles de Conciencia</h3>
+          <p class="text-slate-600 text-sm">Adaptación del mensaje (Copy) y el creativo dependiendo de si el tráfico es frío, tibio o caliente.</p>
+        </div>
+        <!-- Pilar 3 -->
+        <div class="bg-slate-50 rounded-2xl p-8 border border-slate-200 hover:border-blue-400 transition-colors">
+          <i class="fa-solid fa-bolt text-3xl text-blue-600 mb-6"></i>
+          <h3 class="text-lg font-bold text-slate-900 mb-3">Sesgos Cognitivos</h3>
+          <p class="text-slate-600 text-sm">Aplicación de urgencia, escasez, autoridad y prueba social para romper la fricción y acelerar la compra.</p>
+        </div>
+        <!-- Pilar 4 -->
+        <div class="bg-slate-50 rounded-2xl p-8 border border-slate-200 hover:border-blue-400 transition-colors">
+          <i class="fa-solid fa-rotate text-3xl text-blue-600 mb-6"></i>
+          <h3 class="text-lg font-bold text-slate-900 mb-3">Ciclo de Ventas</h3>
+          <p class="text-slate-600 text-sm">Estrategias de retargeting para nutrir al prospecto y maximizar el LTV (Life Time Value) del cliente.</p>
+        </div>
+      </div>
+      
+    </div>
+  </section>
+
+  <!-- ==========================================
+       SECCIÓN: CASOS DE ÉXITO (FONDO CLARO)
+  =========================================== -->
+  <section id="casos-meta" class="w-full bg-slate-50 py-20 px-8 md:px-24 relative z-50">
+    <div class="max-w-7xl mx-auto">
+      
+      <!-- Encabezado de Resultados -->
+      <div class="mb-20 md:text-center">
+        <h2 class="text-4xl md:text-6xl font-black text-slate-900 uppercase tracking-tighter mb-4">
+          Resultados <span class="text-blue-600">Reales</span>
+        </h2>
+        <p class="text-slate-600 text-lg max-w-2xl md:mx-auto">
+          No vendo clics ni impresiones, construyo ecosistemas rentables. Aquí tienes la radiografía de mis campañas recientes.
+        </p>
+      </div>
+
+      <!-- ==========================================
+           CASO 1: E-COMMERCE (Texto Izq, Img Der)
+      =========================================== -->
+      <div class="bg-white rounded-3xl p-8 md:p-12 border border-slate-200 shadow-2xl shadow-slate-200 mb-16 flex flex-col md:flex-row gap-12 items-center">
+        
+        <!-- Lado Izquierdo: Datos -->
+        <div class="w-full md:w-5/12 space-y-8">
+          <div>
+            <div class="inline-block bg-blue-50 border border-blue-200 text-blue-700 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-widest mb-4">
+              Caso 1 • E-Commerce
+            </div>
+            <h3 class="text-3xl md:text-4xl font-bold text-slate-900 mb-4 tracking-tight">Escalado Masivo en 30 Días</h3>
+            <p class="text-slate-600 leading-relaxed">
+              Estrategia orientada a maximizar el volumen de compras de productos de consumo. Se logró escalar la inversión diaria agresivamente, manteniendo el costo por adquisición (CPA) rentable y multiplicando la inversión por 5.
+            </p>
+          </div>
+
+          <!-- Grid de Métricas -->
+          <div class="grid grid-cols-2 gap-4">
+            <div class="bg-slate-50 rounded-xl p-5 border border-slate-200">
+              <span class="block text-slate-500 text-xs font-bold uppercase tracking-wider mb-1">Ad Spend</span>
+              <span class="block text-slate-900 font-mono text-2xl font-black">$31.7M</span>
+            </div>
+            <div class="bg-green-50 rounded-xl p-5 border border-green-100">
+              <span class="block text-green-700 text-xs font-bold uppercase tracking-wider mb-1">Facturación</span>
+              <span class="block text-green-600 font-mono text-2xl font-black">$171.2M</span>
+            </div>
+            <div class="bg-blue-50 rounded-xl p-5 border border-blue-100 col-span-2 flex justify-between items-center">
+              <span class="text-blue-800 text-sm font-bold uppercase tracking-wider">ROAS Promedio</span>
+              <span class="text-blue-600 font-mono text-4xl font-black">5.40x</span>
+            </div>
+          </div>
         </div>
 
-        <!-- Texto Gigante de Fondo (Marca de agua) -->
-        <div class="absolute bottom-[-2vw] md:bottom-[-4vw] left-0 w-full flex items-center justify-center z-10 pointer-events-none select-none overflow-hidden">
-            <h1 class="font-display font-black uppercase text-[20vw] md:text-[14vw] leading-none tracking-widest split-text">
-                TRAFFICKER
-            </h1>
-        </div>
-
-        <!-- Contenedor Frontal -->
-        <div class="relative z-20 flex flex-col md:flex-row w-full min-h-screen">
+        <!-- Lado Derecho: La Captura CSS -->
+        <div class="w-full md:w-7/12 relative shadow-2xl rounded-xl">
+          <!-- Falsa barra de navegador -->
+          <div class="bg-slate-100 px-4 py-3 border border-slate-200 border-b-0 rounded-t-xl flex items-center gap-2">
+            <div class="w-3 h-3 rounded-full bg-red-400"></div>
+            <div class="w-3 h-3 rounded-full bg-yellow-400"></div>
+            <div class="w-3 h-3 rounded-full bg-green-400"></div>
+            <span class="ml-2 text-[10px] text-slate-500 font-mono">business.facebook.com/ads</span>
+          </div>
+          
+          <!-- Contenedor de la imagen real -->
+          <div class="relative bg-white border border-slate-200 rounded-b-xl overflow-hidden">
+            <img src="captura-meta.jpg" alt="Resultados Meta Ads 31M" class="w-full h-auto object-cover" />
             
-            <!-- MITAD IZQUIERDA (Texto Oscuro) -->
-            <div class="w-full md:w-1/2 p-8 md:p-16 lg:p-20 flex flex-col justify-center text-white">
-                <p class="text-blue-400 font-bold tracking-[0.2em] uppercase mb-4 text-xs">Hola, soy Andrés Canaria</p>
-                
-                <h2 class="text-5xl md:text-6xl lg:text-7xl font-display font-bold leading-tight mb-6">
-                    TRAFFICKER<br>
-                    <span class="text-gray-400">DIGITAL</span>
-                </h2>
-                
-                <div class="w-16 h-1 bg-blue-500 mb-6"></div>
-                
-                <p class="text-gray-300 text-base md:text-lg max-w-md font-light leading-relaxed mb-12">
-                    Transformo tu inversión publicitaria en retornos escalables. Estrategia enfocada en ROAS, apoyada por un sólido diseño de piezas y desarrollo web de alta conversión.
-                </p>
-
-                <div class="flex items-center gap-8 md:gap-12">
-                    <div class="flex flex-col">
-                        <span class="text-4xl md:text-5xl font-display font-bold mb-1">6<span class="text-blue-500 text-3xl">+</span></span>
-                        <span class="text-[10px] md:text-xs tracking-widest uppercase text-gray-400 font-medium">Años de<br>Experiencia</span>
-                    </div>
-                    <div class="w-px h-12 bg-gray-700"></div>
-                    <div class="flex flex-col">
-                        <span class="text-4xl md:text-5xl font-display font-bold mb-1">30<span class="text-blue-500 text-3xl">+</span></span>
-                        <span class="text-[10px] md:text-xs tracking-widest uppercase text-gray-400 font-medium">Proyectos<br>Completados</span>
-                    </div>
-                </div>
+            <!-- Cajas CSS Flotantes (Posicionadas sobre los números) -->
+            <!-- 1. Caja Azul (Inversión) -->
+            <div class="absolute border-4 border-blue-500 bg-blue-500/20 rounded-md" style="top: 88%; left: 51%; width: 9%; height: 6%;">
+              <div class="absolute -top-10 left-1/2 transform -translate-x-1/2 bg-blue-600 text-white text-[10px] font-bold px-2 py-1 rounded shadow-lg whitespace-nowrap">
+                Ad Spend
+                <div class="absolute bottom-[-4px] left-1/2 transform -translate-x-1/2 w-2 h-2 bg-blue-600 rotate-45"></div>
+              </div>
             </div>
-
-            <!-- MITAD DERECHA (Tarjetas Claras) -->
-            <div class="w-full md:w-1/2 p-8 md:p-16 lg:p-20 flex flex-col justify-center text-gray-900 md:pl-24">
-                <h3 class="text-sm font-black tracking-[0.2em] mb-6 uppercase text-gray-500">Mi Ecosistema</h3>
-                
-                <div class="flex flex-col gap-4 max-w-md w-full relative z-40">
-                    <!-- Servicio Principal -->
-                    <a href="#casos-meta" class="glass-card-primary rounded-2xl p-6 md:p-8 flex items-start gap-4 cursor-pointer block group">
-                        <div class="bg-blue-100 text-blue-600 p-3 rounded-lg mt-1 group-hover:bg-blue-600 group-hover:text-white transition-colors">
-                            <i class="fa-solid fa-chart-line text-2xl"></i>
-                        </div>
-                        <div>
-                            <h4 class="text-lg font-black uppercase tracking-wide text-gray-900 mb-1">Tráfico en Meta Ads</h4>
-                            <p class="text-sm text-gray-600 font-medium leading-relaxed mb-3">
-                                Estrategia de pauta enfocada en ROAS y escalabilidad pura. No compro clics, compro clientes.
-                            </p>
-                            <span class="text-xs font-bold text-blue-600 uppercase tracking-wider flex items-center gap-2">
-                                Ver Resultados <i class="fa-solid fa-arrow-right group-hover:translate-x-2 transition-transform"></i>
-                            </span>
-                        </div>
-                    </a>
-
-                    <!-- Servicios Secundarios -->
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-2">
-                        <div class="glass-card-light rounded-2xl p-5 flex flex-row md:flex-col items-center md:text-center gap-4 md:gap-0">
-                            <i class="fa-solid fa-laptop-code text-2xl md:mb-3 text-slate-700 w-8 text-center"></i>
-                            <h4 class="text-xs font-bold uppercase tracking-wider text-slate-900 text-left md:text-center">Desarrollo<br class="hidden md:block">Web</h4>
-                        </div>
-                        <div class="glass-card-light rounded-2xl p-5 flex flex-row md:flex-col items-center md:text-center gap-4 md:gap-0">
-                            <i class="fa-solid fa-photo-film text-2xl md:mb-3 text-slate-700 w-8 text-center"></i>
-                            <h4 class="text-xs font-bold uppercase tracking-wider text-slate-900 text-left md:text-center">Diseño<br class="hidden md:block">de Ads</h4>
-                        </div>
-                        <div class="glass-card-light rounded-2xl p-5 flex flex-row items-center justify-start md:justify-center gap-4 md:gap-3 md:col-span-2">
-                            <i class="fa-solid fa-arrows-spin text-xl text-slate-700 w-8 text-center"></i>
-                            <h4 class="text-xs font-bold uppercase tracking-wider text-slate-900">Gestión de Ciclo de Ventas</h4>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Workana Badge -->
-                <div class="mt-12 md:mt-16 inline-flex items-center gap-4 bg-white rounded-full py-3 px-6 shadow-sm border border-gray-200 w-max">
-                    <div class="bg-[#0f172a] text-white w-8 h-8 rounded-full flex items-center justify-center">
-                        <i class="fa-solid fa-check text-xs"></i>
-                    </div>
-                    <div>
-                        <p class="text-[11px] font-bold text-slate-900 uppercase tracking-widest">Andrés Canaria</p>
-                        <p class="text-[10px] text-slate-500 uppercase tracking-wider">Workana Freelancer</p>
-                    </div>
-                </div>
+            <!-- 2. Caja Verde (Facturación) -->
+            <div class="absolute border-4 border-green-500 bg-green-500/20 rounded-md" style="top: 88%; left: 60%; width: 11%; height: 6%;">
+              <div class="absolute -top-10 left-1/2 transform -translate-x-1/2 bg-green-600 text-white text-[10px] font-bold px-2 py-1 rounded shadow-lg whitespace-nowrap">
+                Facturación
+                <div class="absolute bottom-[-4px] left-1/2 transform -translate-x-1/2 w-2 h-2 bg-green-600 rotate-45"></div>
+              </div>
             </div>
+            <!-- 3. Caja Amarilla (ROAS) -->
+            <div class="absolute border-4 border-yellow-400 bg-yellow-400/20 rounded-md" style="top: 88%; left: 71.5%; width: 5.5%; height: 6%;">
+              <div class="absolute -top-10 left-1/2 transform -translate-x-1/2 bg-yellow-500 text-slate-900 text-[10px] font-bold px-2 py-1 rounded shadow-lg whitespace-nowrap">
+                ROAS
+                <div class="absolute bottom-[-4px] left-1/2 transform -translate-x-1/2 w-2 h-2 bg-yellow-500 rotate-45"></div>
+              </div>
+            </div>
+          </div>
         </div>
-    </header>
+      </div>
 
-    <!-- ==========================================
-         SECCIÓN 2: METODOLOGÍA (TEMA CLARO)
-         ========================================== -->
-    <section class="w-full bg-white py-24 px-8 md:px-24 border-b border-slate-200 relative z-30">
-        <div class="max-w-7xl mx-auto">
-            <div class="text-center mb-16">
-                <h2 class="text-3xl md:text-5xl font-display font-black text-slate-900 uppercase tracking-tighter mb-4">
-                    Mi <span class="text-blue-600">Metodología</span>
-                </h2>
-                <p class="text-slate-600 text-lg max-w-2xl mx-auto">
-                    El ROAS no es suerte, es ciencia. Antes de activar una campaña en Meta, construyo ecosistemas rentables basados en estos 4 pilares.
-                </p>
-            </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                <!-- Pilar 1 -->
-                <div class="bg-slate-50 rounded-2xl p-8 border border-slate-200 hover:border-blue-300 transition-colors shadow-sm">
-                    <div class="bg-blue-100 w-14 h-14 rounded-xl flex items-center justify-center text-blue-600 mb-6">
-                        <i class="fa-solid fa-magnifying-glass-chart text-2xl"></i>
-                    </div>
-                    <h3 class="text-lg font-black text-slate-900 uppercase tracking-wide mb-3">1. Investigación Exhaustiva</h3>
-                    <p class="text-sm text-slate-600 leading-relaxed">
-                        Analizo a la competencia, el mercado y los ángulos de venta ganadores. Si no conocemos el terreno, no podemos dominarlo.
-                    </p>
-                </div>
-
-                <!-- Pilar 2 -->
-                <div class="bg-slate-50 rounded-2xl p-8 border border-slate-200 hover:border-blue-300 transition-colors shadow-sm">
-                    <div class="bg-blue-100 w-14 h-14 rounded-xl flex items-center justify-center text-blue-600 mb-6">
-                        <i class="fa-solid fa-temperature-half text-2xl"></i>
-                    </div>
-                    <h3 class="text-lg font-black text-slate-900 uppercase tracking-wide mb-3">2. Nivel de Conciencia</h3>
-                    <p class="text-sm text-slate-600 leading-relaxed">
-                        No le hablo igual a tráfico frío que a alguien listo para comprar. Adapto el mensaje según la etapa del cliente en el embudo.
-                    </p>
-                </div>
-
-                <!-- Pilar 3 -->
-                <div class="bg-slate-50 rounded-2xl p-8 border border-slate-200 hover:border-blue-300 transition-colors shadow-sm">
-                    <div class="bg-blue-100 w-14 h-14 rounded-xl flex items-center justify-center text-blue-600 mb-6">
-                        <i class="fa-solid fa-brain text-2xl"></i>
-                    </div>
-                    <h3 class="text-lg font-black text-slate-900 uppercase tracking-wide mb-3">3. Sesgos Cognitivos</h3>
-                    <p class="text-sm text-slate-600 leading-relaxed">
-                        Aplico psicología de ventas en copys y creativos (escasez, autoridad, prueba social) para romper la fricción de compra.
-                    </p>
-                </div>
-
-                <!-- Pilar 4 -->
-                <div class="bg-slate-50 rounded-2xl p-8 border border-slate-200 hover:border-blue-300 transition-colors shadow-sm">
-                    <div class="bg-blue-100 w-14 h-14 rounded-xl flex items-center justify-center text-blue-600 mb-6">
-                        <i class="fa-solid fa-rotate text-2xl"></i>
-                    </div>
-                    <h3 class="text-lg font-black text-slate-900 uppercase tracking-wide mb-3">4. Ciclo de Ventas</h3>
-                    <p class="text-sm text-slate-600 leading-relaxed">
-                        Cerrar la venta no es el final. Diseño estrategias de retención y remarketing para que un cliente compre una y otra vez.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ==========================================
-         SECCIÓN 3: CASOS DE ÉXITO (TEMA CLARO)
-         ========================================== -->
-    <section id="casos-meta" class="w-full bg-slate-50 py-24 px-8 md:px-24 relative z-30">
-        <div class="max-w-7xl mx-auto">
+      <!-- ==========================================
+           CASO 2: HIGH TICKET (Img Izq, Texto Der)
+      =========================================== -->
+      <div class="bg-white rounded-3xl p-8 md:p-12 border border-slate-200 shadow-2xl shadow-slate-200 mb-16 flex flex-col-reverse md:flex-row gap-12 items-center">
+        
+        <!-- Lado Izquierdo: Captura -->
+        <div class="w-full md:w-7/12 relative shadow-2xl rounded-xl">
+          <div class="bg-slate-100 px-4 py-3 border border-slate-200 border-b-0 rounded-t-xl flex items-center gap-2">
+            <div class="w-3 h-3 rounded-full bg-red-400"></div>
+            <div class="w-3 h-3 rounded-full bg-yellow-400"></div>
+            <div class="w-3 h-3 rounded-full bg-green-400"></div>
+            <span class="ml-2 text-[10px] text-slate-500 font-mono">business.facebook.com/ads</span>
+          </div>
+          
+          <div class="relative bg-white border border-slate-200 rounded-b-xl overflow-hidden">
+            <img src="captura-meta-2.jpg" alt="Resultados Meta Ads 5.6M" class="w-full h-auto object-cover" />
             
-            <div class="text-center mb-20">
-                <h2 class="text-3xl md:text-5xl font-display font-black text-slate-900 uppercase tracking-tighter mb-4">
-                    Resultados <span class="text-blue-600">Reales</span>
-                </h2>
-                <p class="text-slate-600 text-lg max-w-2xl mx-auto">
-                    No vendo promesas, construyo ecosistemas rentables. Aquí tienes la radiografía técnica de 3 escenarios de negocio distintos.
-                </p>
-            </div>
-
-            <div class="space-y-24">
-                
-                <!-- CASO 1: E-COMMERCE (Texto Izquierda, Imagen Derecha) -->
-                <div class="bg-white rounded-[2rem] p-8 md:p-12 border border-slate-200 shadow-xl shadow-slate-200/50 flex flex-col md:flex-row gap-12 items-center">
-                    
-                    <div class="w-full md:w-5/12 space-y-8">
-                        <div>
-                            <div class="inline-block bg-blue-50 border border-blue-200 text-blue-700 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-widest mb-4">
-                                Caso 1 • E-Commerce
-                            </div>
-                            <h3 class="text-3xl md:text-4xl font-black text-slate-900 mb-4 tracking-tight">Escalado Masivo en 30 Días</h3>
-                            <p class="text-slate-600 text-sm md:text-base leading-relaxed">
-                                Estrategia orientada a maximizar el volumen de compras de productos de consumo. Se logró escalar la inversión diaria agresivamente, manteniendo el costo por adquisición (CPA) rentable y multiplicando la inversión por 5.
-                            </p>
-                        </div>
-                        <div class="grid grid-cols-2 gap-4">
-                            <div class="bg-slate-50 rounded-xl p-4 border border-slate-200">
-                                <span class="block text-slate-500 text-xs font-bold uppercase tracking-wider mb-1">Ad Spend</span>
-                                <span class="block text-slate-900 font-mono text-2xl font-black">$31.7M</span>
-                            </div>
-                            <div class="bg-green-50 rounded-xl p-4 border border-green-200">
-                                <span class="block text-green-700 text-xs font-bold uppercase tracking-wider mb-1">Facturación</span>
-                                <span class="block text-green-700 font-mono text-2xl font-black">$171.2M</span>
-                            </div>
-                            <div class="bg-blue-50 rounded-xl p-4 border border-blue-200 col-span-2 flex justify-between items-center">
-                                <span class="text-blue-800 text-sm font-bold uppercase tracking-wider">ROAS Promedio</span>
-                                <span class="text-blue-700 font-mono text-4xl font-black">5.40x</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="w-full md:w-7/12 relative group rounded-xl overflow-hidden shadow-2xl border border-slate-200">
-                        <div class="bg-slate-100 px-4 py-3 border-b border-slate-200 flex items-center gap-2">
-                            <div class="w-3 h-3 rounded-full bg-red-400"></div>
-                            <div class="w-3 h-3 rounded-full bg-yellow-400"></div>
-                            <div class="w-3 h-3 rounded-full bg-green-400"></div>
-                            <span class="ml-2 text-xs text-slate-500 font-mono">business.facebook.com/ads</span>
-                        </div>
-                        <div class="relative">
-                            <!-- Placeholder de imagen (Cambiar src por tu captura de 31M) -->
-                            <img src="https://placehold.co/800x400/e2e8f0/64748b?text=Inserta+captura-meta.png+Aqui" alt="Resultados Meta 31M" class="w-full h-auto object-cover" />
-                            
-                            <!-- Overlays CSS para Caso 1 (Ajusta top y left según tu imagen real) -->
-                            <div class="absolute border-4 border-blue-500 rounded animate-pulse-soft" style="top: 88%; left: 58%; width: 10%; height: 8%;">
-                                <div class="absolute -top-10 left-1/2 transform -translate-x-1/2 bg-blue-600 text-white text-[10px] md:text-xs font-bold px-2 py-1 rounded shadow-lg whitespace-nowrap">
-                                    Ad Spend
-                                    <div class="absolute bottom-[-4px] left-1/2 transform -translate-x-1/2 w-2 h-2 bg-blue-600 rotate-45"></div>
-                                </div>
-                            </div>
-                            <div class="absolute border-4 border-green-500 rounded animate-pulse-soft" style="top: 88%; left: 69%; width: 12%; height: 8%;">
-                                <div class="absolute -top-10 left-1/2 transform -translate-x-1/2 bg-green-600 text-white text-[10px] md:text-xs font-bold px-2 py-1 rounded shadow-lg whitespace-nowrap">
-                                    Facturación
-                                    <div class="absolute bottom-[-4px] left-1/2 transform -translate-x-1/2 w-2 h-2 bg-green-600 rotate-45"></div>
-                                </div>
-                            </div>
-                            <div class="absolute border-4 border-yellow-400 rounded animate-pulse-soft" style="top: 88%; left: 82%; width: 6%; height: 8%;">
-                                <div class="absolute -top-10 left-1/2 transform -translate-x-1/2 bg-yellow-400 text-slate-900 text-[10px] md:text-xs font-bold px-2 py-1 rounded shadow-lg whitespace-nowrap">
-                                    ROAS
-                                    <div class="absolute bottom-[-4px] left-1/2 transform -translate-x-1/2 w-2 h-2 bg-yellow-400 rotate-45"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- CASO 2: HIGH TICKET (Imagen Izquierda, Texto Derecha) -->
-                <div class="bg-white rounded-[2rem] p-8 md:p-12 border border-slate-200 shadow-xl shadow-slate-200/50 flex flex-col-reverse md:flex-row gap-12 items-center">
-                    
-                    <div class="w-full md:w-7/12 relative group rounded-xl overflow-hidden shadow-2xl border border-slate-200">
-                        <div class="bg-slate-100 px-4 py-3 border-b border-slate-200 flex items-center gap-2">
-                            <div class="w-3 h-3 rounded-full bg-red-400"></div>
-                            <div class="w-3 h-3 rounded-full bg-yellow-400"></div>
-                            <div class="w-3 h-3 rounded-full bg-green-400"></div>
-                            <span class="ml-2 text-xs text-slate-500 font-mono">business.facebook.com/ads</span>
-                        </div>
-                        <div class="relative">
-                            <!-- Placeholder de imagen (Cambiar src por tu captura de 5.6M) -->
-                            <img src="https://placehold.co/800x250/e2e8f0/64748b?text=Inserta+captura-meta-2.jpg+Aqui" alt="Resultados Meta 5.6M" class="w-full h-auto object-cover" />
-                            
-                            <!-- Overlays CSS para Caso 2 (Ajusta top y left según tu imagen real) -->
-                            <div class="absolute border-4 border-blue-500 rounded animate-pulse-soft" style="top: 50%; left: 42%; width: 10%; height: 15%;">
-                                <div class="absolute -top-10 left-1/2 transform -translate-x-1/2 bg-blue-600 text-white text-[10px] md:text-xs font-bold px-2 py-1 rounded shadow-lg whitespace-nowrap">
-                                    Ad Spend
-                                </div>
-                            </div>
-                            <div class="absolute border-4 border-green-500 rounded animate-pulse-soft" style="top: 50%; left: 53%; width: 12%; height: 15%;">
-                                <div class="absolute -top-10 left-1/2 transform -translate-x-1/2 bg-green-600 text-white text-[10px] md:text-xs font-bold px-2 py-1 rounded shadow-lg whitespace-nowrap">
-                                    Facturación
-                                </div>
-                            </div>
-                            <div class="absolute border-4 border-yellow-400 rounded animate-pulse-soft" style="top: 50%; left: 66%; width: 6%; height: 15%;">
-                                <div class="absolute -top-10 left-1/2 transform -translate-x-1/2 bg-yellow-400 text-slate-900 text-[10px] md:text-xs font-bold px-2 py-1 rounded shadow-lg whitespace-nowrap">
-                                    ROAS
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="w-full md:w-5/12 space-y-8">
-                        <div>
-                            <div class="inline-block bg-purple-50 border border-purple-200 text-purple-700 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-widest mb-4">
-                                Caso 2 • High Ticket
-                            </div>
-                            <h3 class="text-3xl md:text-4xl font-black text-slate-900 mb-4 tracking-tight">Venta de Alto Valor</h3>
-                            <p class="text-slate-600 text-sm md:text-base leading-relaxed">
-                                Vender productos costosos requiere aplicar sesgos de autoridad y mucha investigación de mercado. Aquí logramos vencer la fricción de compra generando un altísimo nivel de facturación con una inversión muy controlada.
-                            </p>
-                        </div>
-                        <div class="grid grid-cols-2 gap-4">
-                            <div class="bg-slate-50 rounded-xl p-4 border border-slate-200">
-                                <span class="block text-slate-500 text-xs font-bold uppercase tracking-wider mb-1">Ad Spend</span>
-                                <span class="block text-slate-900 font-mono text-2xl font-black">$5.6M</span>
-                            </div>
-                            <div class="bg-green-50 rounded-xl p-4 border border-green-200">
-                                <span class="block text-green-700 text-xs font-bold uppercase tracking-wider mb-1">Facturación</span>
-                                <span class="block text-green-700 font-mono text-2xl font-black">$34.6M</span>
-                            </div>
-                            <div class="bg-purple-50 rounded-xl p-4 border border-purple-200 col-span-2 flex justify-between items-center">
-                                <span class="text-purple-800 text-sm font-bold uppercase tracking-wider">ROAS Obtenido</span>
-                                <span class="text-purple-700 font-mono text-4xl font-black">6.12x</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- CASO 3: NEGOCIO LOCAL (Texto Izquierda, Imagen Derecha) -->
-                <div class="bg-white rounded-[2rem] p-8 md:p-12 border border-slate-200 shadow-xl shadow-slate-200/50 flex flex-col md:flex-row gap-12 items-center">
-                    
-                    <div class="w-full md:w-5/12 space-y-8">
-                        <div>
-                            <div class="inline-block bg-orange-50 border border-orange-200 text-orange-700 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-widest mb-4">
-                                Caso 3 • Consultorio
-                            </div>
-                            <h3 class="text-3xl md:text-4xl font-black text-slate-900 mb-4 tracking-tight">Generación de Leads (CPL)</h3>
-                            <p class="text-slate-600 text-sm md:text-base leading-relaxed">
-                                Cuenta totalmente nueva y presupuesto inicial bajo. La meta era llenar la agenda por WhatsApp. Logramos inundar de mensajes al negocio manteniendo un Costo por Lead (CPL) de menos de un dólar, altamente rentable para servicios médicos.
-                            </p>
-                        </div>
-                        <div class="grid grid-cols-2 gap-4">
-                            <div class="bg-slate-50 rounded-xl p-4 border border-slate-200">
-                                <span class="block text-slate-500 text-xs font-bold uppercase tracking-wider mb-1">Ad Spend</span>
-                                <span class="block text-slate-900 font-mono text-2xl font-black">$1.8M</span>
-                            </div>
-                            <div class="bg-orange-50 rounded-xl p-4 border border-orange-200">
-                                <span class="block text-orange-700 text-xs font-bold uppercase tracking-wider mb-1">Prospectos (Leads)</span>
-                                <span class="block text-orange-700 font-mono text-2xl font-black">403</span>
-                            </div>
-                            <div class="bg-slate-50 rounded-xl p-4 border border-slate-200 col-span-2 flex justify-between items-center">
-                                <span class="text-slate-600 text-sm font-bold uppercase tracking-wider">Costo por Mensaje</span>
-                                <span class="text-slate-900 font-mono text-3xl font-black">$4,491 <span class="text-sm font-sans font-normal text-slate-500">COP</span></span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="w-full md:w-7/12 relative group rounded-xl overflow-hidden shadow-2xl border border-slate-200">
-                        <div class="bg-slate-100 px-4 py-3 border-b border-slate-200 flex items-center gap-2">
-                            <div class="w-3 h-3 rounded-full bg-red-400"></div>
-                            <div class="w-3 h-3 rounded-full bg-yellow-400"></div>
-                            <div class="w-3 h-3 rounded-full bg-green-400"></div>
-                            <span class="ml-2 text-xs text-slate-500 font-mono">business.facebook.com/ads</span>
-                        </div>
-                        <div class="relative">
-                            <!-- Placeholder de imagen (Cambiar src por tu captura del consultorio) -->
-                            <img src="https://placehold.co/800x250/e2e8f0/64748b?text=Inserta+captura-meta-3.jpg+Aqui" alt="Resultados Leads Consultorio" class="w-full h-auto object-cover" />
-                            
-                            <!-- Overlays CSS para Caso 3 (Ajusta top y left) -->
-                            <div class="absolute border-4 border-blue-500 rounded animate-pulse-soft" style="top: 45%; left: 45%; width: 10%; height: 18%;">
-                                <div class="absolute -top-10 left-1/2 transform -translate-x-1/2 bg-blue-600 text-white text-[10px] md:text-xs font-bold px-2 py-1 rounded shadow-lg whitespace-nowrap">
-                                    Inversión
-                                </div>
-                            </div>
-                            <div class="absolute border-4 border-orange-500 rounded animate-pulse-soft" style="top: 45%; left: 63%; width: 8%; height: 18%;">
-                                <div class="absolute -top-10 left-1/2 transform -translate-x-1/2 bg-orange-600 text-white text-[10px] md:text-xs font-bold px-2 py-1 rounded shadow-lg whitespace-nowrap">
-                                    Mensajes (Leads)
-                                </div>
-                            </div>
-                            <div class="absolute border-4 border-green-500 rounded animate-pulse-soft" style="top: 45%; left: 77%; width: 10%; height: 18%;">
-                                <div class="absolute -top-10 left-1/2 transform -translate-x-1/2 bg-green-600 text-white text-[10px] md:text-xs font-bold px-2 py-1 rounded shadow-lg whitespace-nowrap">
-                                    Costo x Lead
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
+            <!-- Resaltadores Caso 2 -->
+            <div class="absolute border-4 border-blue-500 bg-blue-500/20 rounded-md" style="top: 41%; left: 47%; width: 9%; height: 10%;"></div>
+            <div class="absolute border-4 border-green-500 bg-green-500/20 rounded-md" style="top: 41%; left: 56.5%; width: 10%; height: 10%;"></div>
+            <div class="absolute border-4 border-yellow-400 bg-yellow-400/20 rounded-md" style="top: 41%; left: 66.5%; width: 6%; height: 10%;"></div>
+          </div>
         </div>
-    </section>
 
-    <!-- Footer Simple -->
-    <footer class="bg-[#0f172a] text-center py-8 border-t border-slate-800 relative z-30">
-        <p class="text-slate-400 text-sm font-medium tracking-wide uppercase">© 2026 Andrés Canaria • Trafficker Digital</p>
-    </footer>
+        <!-- Lado Derecho: Datos -->
+        <div class="w-full md:w-5/12 space-y-8">
+          <div>
+            <div class="inline-block bg-purple-50 border border-purple-200 text-purple-700 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-widest mb-4">
+              Caso 2 • High Ticket
+            </div>
+            <h3 class="text-3xl md:text-4xl font-bold text-slate-900 mb-4 tracking-tight">Ventas de Alto Valor</h3>
+            <p class="text-slate-600 leading-relaxed">
+              Vender productos premium requiere máxima precisión. En este caso se optimizó la segmentación y los sesgos cognitivos para lograr conversiones costosas con un margen de beneficio espectacular.
+            </p>
+          </div>
+
+          <div class="grid grid-cols-2 gap-4">
+            <div class="bg-slate-50 rounded-xl p-5 border border-slate-200">
+              <span class="block text-slate-500 text-xs font-bold uppercase tracking-wider mb-1">Ad Spend</span>
+              <span class="block text-slate-900 font-mono text-2xl font-black">$5.6M</span>
+            </div>
+            <div class="bg-green-50 rounded-xl p-5 border border-green-100">
+              <span class="block text-green-700 text-xs font-bold uppercase tracking-wider mb-1">Facturación</span>
+              <span class="block text-green-600 font-mono text-2xl font-black">$34.6M</span>
+            </div>
+            <div class="bg-purple-50 rounded-xl p-5 border border-purple-100 col-span-2 flex justify-between items-center">
+              <span class="text-purple-800 text-sm font-bold uppercase tracking-wider">ROAS Logrado</span>
+              <span class="text-purple-600 font-mono text-4xl font-black">6.12x</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ==========================================
+           CASO 3: CONSULTORIO (Texto Izq, Img Der)
+      =========================================== -->
+      <div class="bg-white rounded-3xl p-8 md:p-12 border border-slate-200 shadow-2xl shadow-slate-200 flex flex-col md:flex-row gap-12 items-center">
+        
+        <!-- Lado Izquierdo: Datos -->
+        <div class="w-full md:w-5/12 space-y-8">
+          <div>
+            <div class="inline-block bg-orange-50 border border-orange-200 text-orange-700 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-widest mb-4">
+              Caso 3 • Negocio Local
+            </div>
+            <h3 class="text-3xl md:text-4xl font-bold text-slate-900 mb-4 tracking-tight">Agenda Llena (Leads)</h3>
+            <p class="text-slate-600 leading-relaxed">
+              Cuenta publicitaria completamente nueva con presupuesto limitado. El objetivo era generar conversaciones calificadas al menor costo posible para llenar la agenda de un consultorio.
+            </p>
+          </div>
+
+          <div class="grid grid-cols-2 gap-4">
+            <div class="bg-slate-50 rounded-xl p-5 border border-slate-200">
+              <span class="block text-slate-500 text-xs font-bold uppercase tracking-wider mb-1">Inversión Total</span>
+              <span class="block text-slate-900 font-mono text-2xl font-black">$1.8M</span>
+            </div>
+            <div class="bg-slate-50 rounded-xl p-5 border border-slate-200">
+              <span class="block text-slate-500 text-xs font-bold uppercase tracking-wider mb-1">Leads Generados</span>
+              <span class="block text-slate-900 font-mono text-2xl font-black">403</span>
+            </div>
+            <div class="bg-orange-50 rounded-xl p-5 border border-orange-100 col-span-2 flex justify-between items-center">
+              <span class="text-orange-800 text-sm font-bold uppercase tracking-wider">Costo por Mensaje</span>
+              <span class="text-orange-600 font-mono text-3xl font-black">$4,491</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Lado Derecho: Captura -->
+        <div class="w-full md:w-7/12 relative shadow-2xl rounded-xl">
+          <div class="bg-slate-100 px-4 py-3 border border-slate-200 border-b-0 rounded-t-xl flex items-center gap-2">
+            <div class="w-3 h-3 rounded-full bg-red-400"></div>
+            <div class="w-3 h-3 rounded-full bg-yellow-400"></div>
+            <div class="w-3 h-3 rounded-full bg-green-400"></div>
+            <span class="ml-2 text-[10px] text-slate-500 font-mono">business.facebook.com/ads</span>
+          </div>
+          
+          <div class="relative bg-white border border-slate-200 rounded-b-xl overflow-hidden">
+            <img src="captura-meta-3.jpg" alt="Resultados Meta Ads Consultorio" class="w-full h-auto object-cover" />
+            
+            <!-- Resaltadores Caso 3 -->
+            <div class="absolute border-4 border-blue-500 bg-blue-500/20 rounded-md" style="top: 41%; left: 52%; width: 11%; height: 16%;"></div>
+            <div class="absolute border-4 border-green-500 bg-green-500/20 rounded-md" style="top: 41%; left: 63.5%; width: 12%; height: 16%;"></div>
+            <div class="absolute border-4 border-orange-400 bg-orange-400/20 rounded-md" style="top: 41%; left: 76%; width: 11%; height: 16%;"></div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer Simple -->
+  <footer class="bg-slate-900 text-slate-400 py-8 text-center text-sm font-mono relative z-50">
+    <p>Diseñado con enfoque a la conversión. Andrés Canaria &copy; 2026</p>
+  </footer>
 
 </body>
 </html>
